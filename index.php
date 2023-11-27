@@ -3,24 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Votre titre</title>
+    <title>DataWare HR</title>
 </head>
 <body class="bg-[#F2E9E4]">
    
 <?php
-session_start();
-
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "dataware";
-
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// mysqli_set_charset($conn,'utf8');
-
-if (!$conn) {
-    die("Échec de la connexion à la base de données: " . mysqli_connect_error());
-}
+require_once'connection.php';
 ?>
 
     <div class=" w-11/12 mx-[5%] flex justify-between items-center">
